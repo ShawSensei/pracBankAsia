@@ -64,7 +64,8 @@
             android:id="@+id/accountNo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="vertical"
+            android:weightSum="2">
 
 
 
@@ -72,7 +73,7 @@
                 style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
+                android:layout_weight="1"
                 android:hint="SELECT PARENT CARD"
                 android:orientation="horizontal">
 
@@ -82,7 +83,39 @@
                     android:layout_height="wrap_content"
                     android:inputType="none" />
 
+
             </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+
+                android:id="@+id/balance"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:background="@color/customBlue">
+                <TextView
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Available Balance"
+                    android:textColor="@color/white"
+                    android:padding="6dp"
+                    />
+                <TextView
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="6dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2,76,000bdt"
+                    android:textColor="@color/white"
+                    />
+            </LinearLayout>
+
 
         </LinearLayout>
 

@@ -30,7 +30,7 @@ class CardPinResetActivity : AppCompatActivity() {
 
 
         binding.btnProceed.setOnClickListener {
-            intent = Intent(this, CardCreateSuccessActivity::class.java)
+            intent = Intent(this, ResetReviewActivity::class.java)
             startActivity(intent)
         }
     }

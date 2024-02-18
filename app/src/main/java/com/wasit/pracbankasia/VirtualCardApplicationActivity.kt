@@ -3,8 +3,10 @@ package com.wasit.pracbankasia
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.ArrayAdapter
 import android.widget.AutoCompleteTextView
+import androidx.core.view.marginBottom
 import com.wasit.pracbankasia.databinding.ActivityCardCreateSuccessBinding
 import com.wasit.pracbankasia.databinding.ActivityVirtualCardApplicationBinding
 
@@ -15,6 +17,11 @@ class VirtualCardApplicationActivity : AppCompatActivity() {
 
         binding = ActivityVirtualCardApplicationBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        binding.dropdownPcard.setOnClickListener {
+            binding.balance.visibility = View.VISIBLE
+        }
+
+
 
         val items = arrayOf("Item 1", "Item 2", "Item 3", "Item 4", "Item 5")
         val adapter = ArrayAdapter(this, android.R.layout.simple_dropdown_item_1line, items)
