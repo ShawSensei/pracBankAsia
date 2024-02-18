@@ -13,6 +13,12 @@
         android:theme="@style/Theme.PracBankAsia"
         tools:targetApi="31">
         <activity
+            android:name=".VirtualCardApplicationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CardPinResetActivity"
+            android:exported="false" />
+        <activity
             android:name=".CardCreateSuccessActivity"
             android:exported="false" />
         <activity

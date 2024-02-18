@@ -182,17 +182,17 @@
     </androidx.cardview.widget.CardView>
 
 
-
     <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
 
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cardView"
-        app:layout_constraintVertical_bias="0.1" >
+        app:layout_constraintVertical_bias="0.1">
 
 
         <com.google.android.material.textfield.TextInputEditText
@@ -205,5 +205,21 @@
 
     </com.google.android.material.textfield.TextInputLayout>
 
+    <Button
+        android:id="@+id/btnApp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
 
+
+        android:layout_marginHorizontal="110dp"
+        android:backgroundTint="@color/customBlue"
+        android:text="PROCEED"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
+        app:layout_constraintVertical_bias="0.087">
+
+
+    </Button>
 </androidx.constraintlayout.widget.ConstraintLayout>

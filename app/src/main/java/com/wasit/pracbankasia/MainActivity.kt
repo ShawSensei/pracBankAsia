@@ -15,7 +15,12 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.btnGetStarted.setOnClickListener {
-            intent = Intent(this, CardApplicationActivity::class.java)
+            intent = Intent(this, VirtualCardApplicationActivity::class.java)
+            startActivity(intent)
+
+        }
+        binding.btnReset.setOnClickListener {
+            intent = Intent(this, CardPinResetActivity::class.java)
             startActivity(intent)
 
         }
