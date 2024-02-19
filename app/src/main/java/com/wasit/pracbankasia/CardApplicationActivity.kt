@@ -18,8 +18,13 @@ class CardApplicationActivity : AppCompatActivity() {
             finish()
 
         }
+//        binding.btnApp.setOnClickListener {
+//            intent = Intent(this, CardCreateSuccessActivity::class.java)
+//            startActivity(intent)
+//        }
         binding.btnApp.setOnClickListener {
-            intent = Intent(this, CardCreateSuccessActivity::class.java)
+            intent = Intent(this, CardInformationActivity::class.java)
+            intent.putExtra("Source", "from_vca")
             startActivity(intent)
         }
 

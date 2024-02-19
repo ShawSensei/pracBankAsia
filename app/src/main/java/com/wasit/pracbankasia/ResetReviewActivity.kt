@@ -15,8 +15,13 @@ class ResetReviewActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.btnSubmit.setOnClickListener {
-            intent = Intent(this, ResetSuccessfulActivity::class.java)
+            intent = Intent(this, CardInformationActivity::class.java)
+            intent.putExtra("Source", "from_cpr")
             startActivity(intent)
+//        binding.btnSubmit.setOnClickListener {
+//            intent = Intent(this, CardInformationActivity::class.java)
+//            startActivity(intent)
+//        }
 
 
         }

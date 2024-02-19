@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
 
         }
         binding.btnReset.setOnClickListener {
-            intent = Intent(this, CardPinResetActivity::class.java)
+            intent = Intent(this, CardPinResetActivity::class.java) //CardPinResetActivity
             startActivity(intent)
 
         }
